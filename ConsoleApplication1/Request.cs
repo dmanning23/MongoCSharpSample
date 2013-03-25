@@ -1,14 +1,12 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
 	public class Request
 	{
-		public Guid Id { get; set; }
+		public ObjectId Id { get; set; }
 		public string Url { get; set; }
 		public string Ip { get; set; }
 		public string RequestType { get; set; }
